@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#edf0ff">
+<title>MOTIONFY — Create Without Limits</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#19234b;--yellow:#ffda43;--blue:#355ce9;--red:#f34d70;--green:#36d3a0;--bg:#edf0ff;--white:#fff;--text:#263252}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background-color:var(--bg);background-image:radial-gradient(#c8cdeb 1px,transparent 1px);background-size:18px 18px;color:var(--text);font-family:Nunito,Arial,sans-serif}
+.wrap{width:min(1080px,92%);margin:auto}.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0}.brand{font-weight:1000;font-size:22px;color:var(--navy);letter-spacing:1px}.brand span{color:var(--blue)}.by{font-size:11px;letter-spacing:2px;font-weight:900;color:#7781a5}
+.hero{padding:52px 0 66px;text-align:center}.eyebrow{display:inline-block;background:#fff;border:2px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:8px 14px;border-radius:9px;font-size:11px;font-weight:1000;letter-spacing:2px}.hero h1{font-family:"Barlow Condensed",sans-serif;font-size:clamp(58px,11vw,112px);line-height:.82;margin:26px 0 18px;font-weight:900;letter-spacing:-2px;color:var(--navy)}.hero h1 .yellow{color:var(--yellow);text-shadow:3px 3px 0 var(--navy),-2px -2px 0 var(--navy),2px -2px 0 var(--navy),-2px 2px 0 var(--navy)}.hero h1 .blue{color:var(--blue)}.hero p{max-width:540px;margin:0 auto 28px;line-height:1.7;font-weight:700;color:#626d91}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.btn{border:2px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:13px 21px;border-radius:10px;font:900 13px Nunito;letter-spacing:.5px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;transition:.15s}.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--navy)}.primary{background:var(--yellow);color:var(--navy)}.secondary{background:var(--blue);color:white}
+section{padding:42px 0}.panel{background:#fff;border:2px solid var(--navy);border-radius:18px;box-shadow:7px 7px 0 var(--navy);padding:28px;margin:18px auto;max-width:760px}.section-title{text-align:center;font:900 42px "Barlow Condensed";color:var(--navy);margin:0 0 18px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}.stat{background:white;border:2px solid var(--navy);border-radius:13px;padding:18px;text-align:center;box-shadow:4px 4px 0 var(--navy)}.stat b{display:block;font:900 27px "Barlow Condensed";color:var(--blue)}.stat small{font-weight:800;color:#7480a3}
+.activation{display:none}.activation.show{display:block;animation:rise .3s ease}@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}.step{display:none}.step.active{display:block}.field{width:100%;padding:14px 15px;border:2px solid #cbd2ed;border-radius:10px;font:700 15px Nunito;outline:none;margin:8px 0 14px}.field:focus{border-color:var(--blue)}.hint{font-size:13px;line-height:1.65;color:#6c7698}.notice{background:#fff8d8;border:1px solid #e8cb58;border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.6;margin:14px 0}.guide{border:1px solid #dce1f4;border-radius:12px;padding:15px;margin:16px 0}.guide summary{font-weight:900;cursor:pointer;color:var(--blue)}.guide ol{padding-left:20px;line-height:1.8;font-size:14px}.footer{text-align:center;padding:30px 0 45px;font-size:12px;color:#7882a2;font-weight:800}
+@media(max-width:600px){.hero{padding:36px 0 48px}.panel{padding:21px}.stats{grid-template-columns:1fr}.top{padding:16px 0}}
+</style>
+</head>
+<body>
+<header class="wrap top"><div class="brand">MOTION<span>FY</span></div><div class="by">BY TTIMNASS</div></header>
+<main>
+<section class="hero wrap" id="home">
+<div class="eyebrow">YOUR CREATIVE SPACE</div>
+<h1><span class="yellow">CREATE</span><br><span class="blue">WITHOUT</span><br><span class="blue">LIMITS.</span></h1>
+<p>Mulai perjalanan kreatifmu dengan alur yang sederhana, jelas, dan aman.</p>
+<div class="actions"><button class="btn secondary" id="dashboardBtn">BUKA DASHBOARD</button><button class="btn primary" id="startBtn">MULAI AKTIVASI</button></div>
+<div class="stats"><div class="stat"><b>01</b><small>Masukkan email</small></div><div class="stat"><b>02</b><small>Lanjut ke layanan resmi</small></div><div class="stat"><b>SAFE</b><small>Autentikasi langsung</small></div></div>
+</section>
+<section class="wrap" id="about"><h2 class="section-title">ABOUT MOTIONFY</h2><div class="panel"><p style="font-weight:800;line-height:1.8;margin:0">MOTIONFY membantu mengarahkan pengguna ke proses layanan yang benar. Untuk keamanan akun, proses masuk dan verifikasi dilakukan langsung pada situs resmi penyedia layanan.</p></div></section>
+<section class="wrap activation" id="activation">
+<h2 class="section-title">MULAI AKTIVASI</h2>
+<div class="panel">
+<div class="step active" id="stepEmail">
+<h3 style="margin:0 0 6px;color:var(--navy)">Masukkan email</h3>
+<p class="hint">Masukkan alamat email untuk melanjutkan ke petunjuk autentikasi resmi.</p>
+<label for="email" style="font-weight:900;font-size:13px">EMAIL</label>
+<input class="field" id="email" type="email" autocomplete="email" placeholder="nama@email.com">
+<button class="btn primary" id="sendEmail" style="width:100%">KIRIM</button>
+<p class="hint" id="emailError" role="status"></p>
+</div>
+<div class="step" id="stepContinue">
+<h3 style="margin:0 0 6px;color:var(--navy)">Lanjutkan di layanan resmi</h3>
+<p class="hint">Untuk menjaga keamanan akun, MOTIONFY tidak meminta atau menyimpan Magic Link, kode verifikasi, maupun token login.</p>
+<div class="notice">Jangan salin atau kirim tautan masuk, kode sekali pakai, maupun informasi rahasia akun ke situs lain.</div>
+<details class="guide" open>
+<summary>CARA MELANJUTKAN?</summary>
+<ol><li>Buka email dari layanan resmi Alight Creative.</li><li>Pastikan alamat pengirim dan tujuan tautan benar-benar resmi.</li><li>Lakukan proses masuk langsung di situs Alight Creative.</li><li>Jangan bagikan tautan autentikasi atau kode verifikasi kepada siapa pun.</li></ol>
+</details>
+<a class="btn secondary" style="width:100%" href="https://alightcreative.com/" target="_blank" rel="noopener noreferrer">LANJUTKAN DI ALIGHT CREATIVE ↗</a>
+<button class="btn primary" id="backBtn" style="width:100%;margin-top:12px">KEMBALI</button>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">MOTIONFY · BY TTIMNASS</footer>
+<script>
+const activation=document.getElementById('activation');
+document.getElementById('startBtn').addEventListener('click',()=>{activation.classList.add('show');activation.scrollIntoView({behavior:'smooth',block:'start'});});
+document.getElementById('dashboardBtn').addEventListener('click',()=>document.getElementById('about').scrollIntoView({behavior:'smooth'}));
+document.getElementById('sendEmail').addEventListener('click',()=>{
+ const email=document.getElementById('email');const error=document.getElementById('emailError');
+ if(!email.checkValidity()||!email.value.trim()){error.textContent='Masukkan alamat email yang valid.';email.focus();return;}
+ error.textContent='';document.getElementById('stepEmail').classList.remove('active');document.getElementById('stepContinue').classList.add('active');
+});
+document.getElementById('backBtn').addEventListener('click',()=>{document.getElementById('stepContinue').classList.remove('active');document.getElementById('stepEmail').classList.add('active');});
+</script>
+</body>
+</html>
